@@ -53,7 +53,7 @@ class MyAudioFolder(MyAudioFolder):
         self.samples = samples
 
     def __len__(self) -> int:
-        return sum([len(v) for v in self.samples.values()])
+        return len(self.samples[self.classes[0]])
 
     def __getitem__(self, index: int) -> Tuple[Any, Any]:
         sample = []
