@@ -1,0 +1,4 @@
+#  parameters configuration
+mode: train
+root: data/
+predefined_dataset: CMUARCTICForVC
