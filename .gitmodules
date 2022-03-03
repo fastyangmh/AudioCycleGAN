@@ -1,0 +1,3 @@
+[submodule "DeepLearningTemplate"]
+	path = DeepLearningTemplate
+	url = https://github.com/fastyangmh/DeepLearningTemplate
