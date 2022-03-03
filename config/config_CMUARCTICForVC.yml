@@ -2,3 +2,37 @@
 mode: train
 root: data/
 predefined_dataset: CMUARCTICForVC
+classes: ["aew", "slt"]
+max_samples: null
+batch_size: 32
+num_workers: 0
+device: cuda
+sample_rate: 16000
+
+# transforms configuration
+transforms_config:
+  train:
+    PadWaveform:
+      max_waveform_length: 117120
+
+  val:
+    PadWaveform:
+      max_waveform_length: 117120
+
+  test:
+    PadWaveform:
+      max_waveform_length: 117120
+
+  predict:
+    PadWaveform:
+      max_waveform_length: 117120
+
+# target transforms configuration
+target_transforms_config:
+  train: null
+
+  val: null
+
+  test: null
+
+  predict: null
